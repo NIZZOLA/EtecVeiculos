@@ -37,7 +37,10 @@ namespace VeiculosApp
                 if (veic.ValidarCadastro() == "")
                 {
                     if (veic.Gravar())
+                    {
                         MessageBox.Show("Gravado com sucesso !");
+                        LimpaCampos();
+                    }
                     else
                         MessageBox.Show("Falha ao gravar !");
                 }
@@ -60,6 +63,19 @@ namespace VeiculosApp
             {
                 cmb_cor.Items.Add(item);
             }
+        }
+
+        private void LimpaCampos()
+        {
+            txt_titulo.Text = "";
+            txt_marca.Text = "";
+            txt_modelo.Text = "";
+            msk_placa.Text = "";
+            cmb_ano.Text = "";
+            cmb_ano.SelectedIndex = -1;
+            cmb_cor.Text = "";
+            cmb_cor.SelectedIndex = -1;
+            txt_valor.Text = "0";
         }
     }
 }

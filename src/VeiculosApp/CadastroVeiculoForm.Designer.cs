@@ -140,7 +140,7 @@
             // msk_placa
             // 
             msk_placa.Location = new Point(134, 143);
-            msk_placa.Mask = "AAA-#A##";
+            msk_placa.Mask = "###-####";
             msk_placa.Name = "msk_placa";
             msk_placa.Size = new Size(181, 31);
             msk_placa.TabIndex = 11;
@@ -148,7 +148,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(449, 141);
+            label7.Location = new Point(419, 141);
             label7.Name = "label7";
             label7.Size = new Size(56, 25);
             label7.TabIndex = 12;

@@ -9,9 +9,8 @@ namespace VeiculosApp
 
         private void veiculosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form2 = new CadastroVeiculoForm();
+            var form2 = new ListarVeiculos();
             form2.ShowDialog();
-         //   form2.Show();
         }
 
         private void sairToolStripMenuItem_Click(Object sender, EventArgs e)
